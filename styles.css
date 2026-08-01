@@ -76,14 +76,13 @@ a { color: inherit; text-decoration: none; }
 .stats span { color: #898a83; font-size: .7rem; text-transform: uppercase; }
 
 .projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2vw; align-items: stretch; }
-.project { position: relative; padding: 11px; min-height: 300px; display: flex; flex-direction: column; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
-.project:hover { transform: translateY(-6px); }
-.project-link { position: absolute; inset: 0; z-index: 2; }
+.project { padding: 22px; min-height: 600px; display: flex; flex-direction: column; transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.project:hover { transform: translateY(-12px); }
 .project-dark { background: #22262b; color: white; }
 .project-light { background: #dddcd4; }
 .project-acid { background: var(--acid); }
-.project-top { display: flex; justify-content: space-between; font-size: .325rem; text-transform: uppercase; letter-spacing: .1em; opacity: .65; }
-.project-visual { flex: 1; min-height: 165px; position: relative; display: grid; place-items: center; overflow: hidden; }
+.project-top { display: flex; justify-content: space-between; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; opacity: .65; }
+.project-visual { flex: 1; min-height: 330px; position: relative; display: grid; place-items: center; overflow: hidden; }
 .visual-aurora { perspective: 700px; }
 .aurora-sphere { width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle at 33% 28%, #fff, #ad8cff 18%, #30296c 55%, #080b13 75%); box-shadow: 0 0 40px #6047a7; animation: sphere 7s ease-in-out infinite; }
 .visual-aurora p { position: absolute; font: 500 clamp(1rem, 2vw, 2rem) "Arial Black", Arial, sans-serif; letter-spacing: .24em; mix-blend-mode: difference; }
@@ -93,11 +92,11 @@ a { color: inherit; text-decoration: none; }
 .mono-ring { position: absolute; width: 145px; height: 145px; border: 1px solid var(--ink); border-radius: 50%; }
 .visual-mono p { position: absolute; right: 8%; bottom: 5%; font: 600 .5rem/1.2 "Arial Black", Arial, sans-serif; text-align: right; }
 .pulse-lines { position: absolute; inset: 8%; background: repeating-radial-gradient(ellipse at center, transparent 0 9px, var(--ink) 10px 12px); animation: pulse 5s linear infinite; }
-.visual-pulse p { position: relative; z-index: 1; padding: 10px; background: var(--acid); font: 600 clamp(1.5rem, 4vw, 4rem)/.82 "Arial Black", Arial, sans-serif; letter-spacing: -.08em; text-align: center; }
-.project-info { display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: end; padding-top: 10px; border-top: 1px solid currentColor; }
-.project-info h3 { margin: 0; font: 500 .575rem "Arial Black", Arial, sans-serif; }
-.project-info p { grid-column: 1 / -1; max-width: 320px; margin: 0; font-size: .4rem; line-height: 1.55; opacity: .65; }
-.project-arrow { font-size: .9rem; transition: transform .3s; }
+.visual-pulse p { position: relative; z-index: 1; padding: 20px; background: var(--acid); font: 600 clamp(3rem, 8vw, 8rem)/.82 "Arial Black", Arial, sans-serif; letter-spacing: -.08em; text-align: center; }
+.project-info { display: grid; grid-template-columns: 1fr auto; gap: 12px 25px; align-items: end; padding-top: 20px; border-top: 1px solid currentColor; }
+.project-info h3 { margin: 0; font: 500 1.15rem "Arial Black", Arial, sans-serif; }
+.project-info p { grid-column: 1 / -1; max-width: 320px; margin: 0; font-size: .8rem; line-height: 1.55; opacity: .65; }
+.project-arrow { font-size: 1.8rem; transition: transform .3s; }
 .project:hover .project-arrow { transform: rotate(45deg); }
 
 .detail-page { min-height: 100vh; padding: 150px 4vw 60px; display: flex; flex-direction: column; }
@@ -148,7 +147,7 @@ footer div { display: flex; gap: 25px; }
   .section-label { margin-bottom: 50px; }
   .about-grid, .projects { grid-template-columns: 1fr; }
   .about-copy { margin-top: 40px; }
-  .project { min-height: 280px; }
+  .project { min-height: 560px; }
   .project-info { grid-template-columns: 1fr auto; }
   .project-info p { display: none; }
   .service { grid-template-columns: 40px 1fr auto; gap: 15px; }
